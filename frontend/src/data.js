@@ -2,8 +2,8 @@ export const sample_sites = [
     {
         id: '1',
         name: 'Магазин',
-        prepareTime: '1 седмица',
-        price: '10',
+        prepareTime: '1 седм.',
+        price: '6',
         favorite: false,
         origins: ['bg'],
         stars: 4.5,
@@ -13,8 +13,8 @@ export const sample_sites = [
     {
         id: '2',
         name: 'Визитка',
-        prepareTime: '1 седмица',
-        price: '10',
+        prepareTime: '1 седм.',
+        price: '4',
         favorite: false,
         origins: ['bg', 'eng', 'gr'],
         stars: 4,
@@ -24,8 +24,8 @@ export const sample_sites = [
     {
         id: '3',
         name: 'CV/Resume',
-        prepareTime: '1 седмица',
-        price: '10',
+        prepareTime: '2 дена',
+        price: '5',
         favorite: false,
         origins: ['eng'],
         stars: 3,
