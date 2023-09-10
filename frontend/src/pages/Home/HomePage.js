@@ -18,7 +18,7 @@ export default function HomePage() {
     const { sites } = state;
 
     useEffect(() => {
-        getAll().then(food => dispatch({ type: 'SITES_LOADED', payload: sites }));
+        getAll().then(sites => dispatch({ type: 'SITES_LOADED', payload: sites }));
     }, []);
 
     return (

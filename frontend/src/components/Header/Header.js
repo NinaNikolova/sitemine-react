@@ -13,7 +13,7 @@ export default function Header() {
     return <header className={classes.header}>
         <div className={classes.container}>
             <Link to="/" className={classes.logo}>
-                Бърз, лесен и безпалатен сайт!
+                Бърз, лесен и евтин уебсайт!
             </Link>
             <nav>
                 <ul>

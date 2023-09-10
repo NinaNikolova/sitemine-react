@@ -16,7 +16,7 @@ export const sample_sites = [
         prepareTime: '1 седмица',
         price: '10',
         favorite: false,
-        origins: ['bg'],
+        origins: ['bg', 'eng', 'gr'],
         stars: 4,
         imageUrl: 'site-2.jpg',
         tags: ['Информация', 'Сайт', 'Визитка']
