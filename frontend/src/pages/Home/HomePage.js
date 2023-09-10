@@ -1,26 +1,30 @@
 import React, { useEffect, useReducer } from 'react';
-import { getAll, search } from '../../services/siteService';
+import { getAll, getAllTags, search } from '../../services/siteService';
 import Thumbnails from '../../components/Thumbnails/Thumbnails';
 import { useParams } from 'react-router-dom';
 import Search from '../../components/Search/Search';
+import Tags from '../../components/Tags/Tags';
 
 
-const initialState = { sites: [] };
+const initialState = { sites: [], tags: [] };
 
 const reducer = (state, action) => {
     switch (action.type) {
         case 'SITES_LOADED':
             return { ...state, sites: action.payload };
+        case 'TAGS_LOADED':
+            return { ...state, tags: action.payload };
         default:
             return state;
     }
 };
 export default function HomePage() {
     const [state, dispatch] = useReducer(reducer, initialState);
-    const { sites } = state;
+    const { sites, tags } = state;
     const { searchTerm } = useParams();
 
     useEffect(() => {
+        getAllTags().then(tags => dispatch({ type: 'TAGS_LOADED', payload: tags }));
         const loadSites = searchTerm ? search(searchTerm) : getAll(); //the loadSites is a promise
         loadSites.then(sites => dispatch({ type: 'SITES_LOADED', payload: sites }));
     }, [searchTerm]);
@@ -28,6 +32,7 @@ export default function HomePage() {
     return (
         <>
             <Search />
+            <Tags tags={tags} />
             <Thumbnails sites={sites} />
         </>
 
