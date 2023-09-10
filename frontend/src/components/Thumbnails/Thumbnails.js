@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './thumbnails.module.css';
 import { Link } from 'react-router-dom';
 import StarRating from '../StarRating/StarRating';
+import Price from '../Price/Price';
 
 export default function Thumbnails({ sites }) {
     return (
@@ -30,6 +31,9 @@ export default function Thumbnails({ sites }) {
                                     {site.prepareTime}
                                 </div>
 
+                            </div>
+                            <div className={classes.price}>
+                                <Price price={site.price} />
                             </div>
                         </div>
                     </li>)
