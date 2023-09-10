@@ -5,3 +5,12 @@ export const getAll = async () => sample_sites;
 export const search = async searchTerm => sample_sites.filter(item => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
 
 export const getAllTags = async () => sample_tags;
+
+export const getAllTag = async tag => {
+    if (tag === 'Всички') {
+        return getAll();
+    } else {
+        return sample_sites.filter(item => item.tags?.includes(tag));
+    }
+
+};

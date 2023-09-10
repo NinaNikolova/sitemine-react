@@ -52,7 +52,7 @@ export const sample_sites = [
         origins: ['bg', 'eng'],
         stars: 3,
         imageUrl: 'site-5.jpg',
-        tags: ['Пририода']
+        tags: ['Природа']
     },
     {
         id: '6',
