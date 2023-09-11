@@ -2,7 +2,7 @@ export const sample_sites = [
     {
         id: '1',
         name: 'Магазин',
-        prepareTime: '1 седм.',
+        prepareTime: '5',
         price: '6',
         favorite: false,
         origins: ['bg'],
@@ -13,7 +13,7 @@ export const sample_sites = [
     {
         id: '2',
         name: 'Визитка',
-        prepareTime: '1 седм.',
+        prepareTime: '3',
         price: '4',
         favorite: false,
         origins: ['bg', 'eng', 'gr'],
@@ -24,7 +24,7 @@ export const sample_sites = [
     {
         id: '3',
         name: 'CV',
-        prepareTime: '2 дена',
+        prepareTime: '2',
         price: '5',
         favorite: false,
         origins: ['eng'],
@@ -35,7 +35,7 @@ export const sample_sites = [
     {
         id: '4',
         name: 'Резюме',
-        prepareTime: '2 дена',
+        prepareTime: '2',
         price: '5',
         favorite: false,
         origins: ['eng'],
@@ -46,7 +46,7 @@ export const sample_sites = [
     {
         id: '5',
         name: 'Блог',
-        prepareTime: '2 дена',
+        prepareTime: '2',
         price: '5',
         favorite: false,
         origins: ['bg', 'eng'],
@@ -57,7 +57,7 @@ export const sample_sites = [
     {
         id: '6',
         name: 'Рецепти',
-        prepareTime: '2 дена',
+        prepareTime: '3',
         price: '5',
         favorite: false,
         origins: ['bg', 'eng'],

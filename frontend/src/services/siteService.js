@@ -14,3 +14,5 @@ export const getAllTag = async tag => {
     }
 
 };
+
+export const getById = async siteId => sample_sites.find(item => item.id === siteId);
