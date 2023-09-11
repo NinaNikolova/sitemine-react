@@ -1,5 +1,9 @@
-# Getting Started with Create React App
+`Почерпи едно кафе и имаш уебсаит!`
+`Проект - упражнение на React.JS`
 
+![image](https://github.com/NinaNikolova/sitemine-react/assets/40785979/8ceb98fb-521b-4212-b393-ee97977e58fb)
+
+# Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
