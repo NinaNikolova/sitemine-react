@@ -1,4 +1,4 @@
-# Почерпи едно кафе и имаш уебсайт!
+# Почерпи едно ☕ и имаш уебсайт!
 - This project is exercise with React.JS -frontend and Express - backend, but it can become something more ...😉🤞
 
 
