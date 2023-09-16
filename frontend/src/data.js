@@ -7,7 +7,7 @@ export const sample_sites = [
         favorite: false,
         origins: ['bg'],
         stars: 4.5,
-        imageUrl: 'site-1.jpg',
+        imageUrl: '/sites/site-1.jpg',
         tags: ['Магазин', 'Информация']
     },
     {
@@ -18,7 +18,7 @@ export const sample_sites = [
         favorite: false,
         origins: ['bg', 'eng', 'gr'],
         stars: 4,
-        imageUrl: 'site-2.jpg',
+        imageUrl: '/sites/site-2.jpg',
         tags: ['Информация', 'Визитка']
     },
     {
@@ -29,7 +29,7 @@ export const sample_sites = [
         favorite: false,
         origins: ['eng'],
         stars: 3,
-        imageUrl: 'site-3.jpg',
+        imageUrl: '/sites/site-3.jpg',
         tags: ['Резюме', 'CV']
     },
     {
@@ -40,7 +40,7 @@ export const sample_sites = [
         favorite: false,
         origins: ['eng'],
         stars: 3,
-        imageUrl: 'site-4.jpg',
+        imageUrl: '/sites/site-4.jpg',
         tags: ['Резюме', 'CV']
     },
     {
@@ -51,7 +51,7 @@ export const sample_sites = [
         favorite: false,
         origins: ['bg', 'eng'],
         stars: 3,
-        imageUrl: 'site-5.jpg',
+        imageUrl: '/sites/site-5.jpg',
         tags: ['Природа']
     },
     {
@@ -62,7 +62,7 @@ export const sample_sites = [
         favorite: false,
         origins: ['bg', 'eng'],
         stars: 3,
-        imageUrl: 'site-6.jpg',
+        imageUrl: '/sites/site-6.jpg',
         tags: ['Рецепти']
     },
 ];

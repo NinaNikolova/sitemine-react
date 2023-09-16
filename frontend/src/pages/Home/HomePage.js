@@ -25,9 +25,13 @@ export default function HomePage() {
 
     useEffect(() => {
         getAllTags().then(tags => dispatch({ type: 'TAGS_LOADED', payload: tags }));
-        const loadSites =
-            tag ? getAllTag(tag) :
-                searchTerm ? search(searchTerm) : getAll(); //the loadSites is a promise
+
+        const loadSites = tag
+            ? getAllTag(tag)
+            : searchTerm
+                ? search(searchTerm)
+                : getAll();
+
         loadSites.then(sites => dispatch({ type: 'SITES_LOADED', payload: sites }));
     }, [searchTerm, tag]);
 

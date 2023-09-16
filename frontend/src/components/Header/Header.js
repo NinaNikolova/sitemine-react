@@ -13,7 +13,7 @@ export default function Header() {
     return <header className={classes.header}>
         <div className={classes.container}>
             <Link to="/" className={classes.logo}>
-                Почерпи едно <i class="fas fa-mug-hot"></i> и имаш уебсайт!
+                Почерпи едно <i className="fas fa-mug-hot"></i> и имаш уебсайт!
             </Link>
             <nav>
                 <ul>
@@ -24,7 +24,7 @@ export default function Header() {
                                 <div className={classes.menu}>
                                     <Link to="/profile">Профил</Link>
                                     <Link to="/orders">Поръчки</Link>
-                                    <a onClick={logout}>Излез от профила си</a>
+                                    <button onClick={logout}>Излез от профила си</button>
                                 </div>
                             </li>) : (
                                 <Link to="/login">Влез в профила си</Link>
