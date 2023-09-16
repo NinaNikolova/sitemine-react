@@ -7,8 +7,8 @@
 ##To start the project:
 
 - in frontend folder:
-  1.npm i
-  2.npm start
+- 1. npm i
+  2. npm start
 
 - in backend folder:
 - 1. npm i
