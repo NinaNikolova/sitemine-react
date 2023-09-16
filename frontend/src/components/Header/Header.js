@@ -1,14 +1,15 @@
 import React from 'react';
 import classes from "./header.module.css";
 import { Link } from 'react-router-dom';
+import { useCart } from '../../hooks/useCart';
 
 export default function Header() {
     const user = {
         name: 'Гошо',
     };
-    const cart = {
-        totalCount: 10,
-    };
+
+    const { cart } = useCart();
+
     const logout = () => { };
     return <header className={classes.header}>
         <div className={classes.container}>

@@ -4,18 +4,19 @@ import { useCart } from '../../hooks/useCart';
 import Title from '../../components/Title/Title';
 import { Link } from 'react-router-dom';
 import Price from '../../components/Price/Price';
+import NotFound from '../../components/NotFound/NotFound';
 
 export default function CartPage() {
     const { cart, removeFromCart, changeQuantity } = useCart();
     return (
         <>
             <Title title="Количка" margin="1.5rem 0 0 2.5rem" />
-            {cart && cart.items.length > 0 &&
-                <div className={classes.container}>
+            {cart.items.length === 0 ? (<NotFound message="Количката е празна!" />) :
+                (< div className={classes.container}>
                     <ul className={classes.list}>
                         {cart.items.map(item => <li key={item.site.id}>
                             <div>
-                                <img src={`/sites/${item.site.imageUrl}`} alt={item.site.name} />
+                                <img src={`${item.site.imageUrl}`} alt={item.site.name} />
                             </div>
                             <div>
                                 <Link to={`/site/${item.site.id}`}>{item.site.name}</Link>
@@ -51,7 +52,7 @@ export default function CartPage() {
                         </div>
                         <Link to="/checkout">Продължете към плащане</Link>
                     </div>
-                </div>
+                </div >)
             }
         </>
     );

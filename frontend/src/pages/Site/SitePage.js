@@ -6,6 +6,7 @@ import StarRating from '../../components/StarRating/StarRating';
 import Tags from '../../components/Tags/Tags';
 import Price from '../../components/Price/Price';
 import { useCart } from '../../hooks/useCart';
+import NotFound from '../../components/NotFound/NotFound';
 
 export default function SitePage() {
     const [site, setSite] = useState({});
@@ -23,8 +24,8 @@ export default function SitePage() {
     }, [id]);
     return (
         <>
-            {site &&
-                <div className={classes.container}>
+            {!site ? (<NotFound message="Сайтът не е намерен!" linkText="Върнете се на Начална страница" />) :
+                (<div className={classes.container}>
                     <img
                         className={classes.image}
                         src={`${site.imageUrl}`}
@@ -72,7 +73,7 @@ export default function SitePage() {
 
                         <button onClick={handleAddToCart}>Добави към количката</button>
                     </div>
-                </div>
+                </div>)
             }
         </>
     );
