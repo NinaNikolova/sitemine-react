@@ -1,5 +1,5 @@
 # Почерпи едно кафе и имаш уебсайт!
-- This project is React.JS exercise, but it can become something more ...
+- This project is exercise with React.JS -frontend and Express - backend, but it can become something more ...😉🤞
 
 
 
