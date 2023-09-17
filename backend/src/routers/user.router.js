@@ -12,7 +12,7 @@ router.post('/login', (req, res) => {
         res.send(generateTokenResponse(user));
         return;
     }
-    res.status(BAD_REQUEST).send('Username or password is invalid')
+    res.status(BAD_REQUEST).send('Email или парола са грешни!')
 
 })
 const generateTokenResponse = user => {
@@ -30,7 +30,7 @@ const generateTokenResponse = user => {
         name: user.name,
         address: user.address,
         isAdmin: user.isAdmin,
-        tokon,
+        token,
     }
 }
 export default router;
