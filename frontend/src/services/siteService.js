@@ -1,18 +1,28 @@
-import { sample_sites, sample_tags } from "../data";
+import axios from 'axios';
 
-export const getAll = async () => sample_sites;
+export const getAll = async () => {
+    const { data } = await axios.get('/api/sites');
+    return data;
+};
 
-export const search = async searchTerm => sample_sites.filter(item => item.name.toLowerCase().includes(searchTerm.toLowerCase()));
+export const search = async searchTerm => {
+    const { data } = await axios.get('/api/sites/search/' + searchTerm);
+    return data;
+};
 
-export const getAllTags = async () => sample_tags;
+export const getAllTags = async () => {
+    const { data } = await axios.get('/api/sites/tags');
+    return data;
+};
 
 export const getAllTag = async tag => {
-    if (tag === 'Всички') {
-        return getAll();
-    } else {
-        return sample_sites.filter(item => item.tags?.includes(tag));
-    }
+    if (tag === 'всички') return getAll();
+    const { data } = await axios.get('/api/sites/tag/' + tag);
+    return data;
 
 };
 
-export const getById = async siteId => sample_sites.find(item => item.id === siteId);
+export const getById = async siteId => {
+    const { data } = await axios.get('/api/sites/' + siteId);
+    return data;
+}

@@ -8,7 +8,7 @@ export const sample_sites = [
         origins: ['bg'],
         stars: 4.5,
         imageUrl: '/sites/site-1.jpg',
-        tags: ['Магазин', 'Информация']
+        tags: ['магазин', 'информация']
     },
     {
         id: '2',
@@ -19,7 +19,7 @@ export const sample_sites = [
         origins: ['bg', 'eng', 'gr'],
         stars: 4,
         imageUrl: '/sites/site-2.jpg',
-        tags: ['Информация', 'Визитка']
+        tags: ['информация', 'визитка']
     },
     {
         id: '3',
@@ -30,18 +30,18 @@ export const sample_sites = [
         origins: ['eng'],
         stars: 3,
         imageUrl: '/sites/site-3.jpg',
-        tags: ['Резюме', 'CV']
+        tags: ['резюме', 'cv']
     },
     {
         id: '4',
-        name: 'Резюме',
+        name: 'резюме',
         prepareTime: '2',
         price: '5',
         favorite: false,
         origins: ['eng'],
         stars: 3,
         imageUrl: '/sites/site-4.jpg',
-        tags: ['Резюме', 'CV']
+        tags: ['резюме', 'cv']
     },
     {
         id: '5',
@@ -52,7 +52,7 @@ export const sample_sites = [
         origins: ['bg', 'eng'],
         stars: 3,
         imageUrl: '/sites/site-5.jpg',
-        tags: ['Природа']
+        tags: ['природа']
     },
     {
         id: '6',
@@ -63,17 +63,17 @@ export const sample_sites = [
         origins: ['bg', 'eng'],
         stars: 3,
         imageUrl: '/sites/site-6.jpg',
-        tags: ['Рецепти']
+        tags: ['рецепти']
     },
 ];
 
 export const sample_tags = [
-    { name: 'Всички', count: 6 },
-    { name: 'CV', count: 2 },
-    { name: 'Резюме', count: 2 },
-    { name: 'Природа', count: 1 },
-    { name: 'Рецепти', count: 1 },
-    { name: 'Магазин', count: 1 },
-    { name: 'Информация', count: 1 },
-    { name: 'Визитка', count: 1 },
+    { name: 'всички', count: 6 },
+    { name: 'cv', count: 2 },
+    { name: 'резюме', count: 2 },
+    { name: 'природа', count: 1 },
+    { name: 'рецепти', count: 1 },
+    { name: 'магазин', count: 1 },
+    { name: 'информация', count: 1 },
+    { name: 'визитка', count: 1 },
 ];
