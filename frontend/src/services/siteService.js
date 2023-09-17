@@ -16,7 +16,9 @@ export const getAllTags = async () => {
 };
 
 export const getAllTag = async tag => {
-    if (tag === 'всички') return getAll();
+    if (tag === 'всички') {
+        return getAll();
+    }
     const { data } = await axios.get('/api/sites/tag/' + tag);
     return data;
 
@@ -25,4 +27,4 @@ export const getAllTag = async tag => {
 export const getById = async siteId => {
     const { data } = await axios.get('/api/sites/' + siteId);
     return data;
-}
+};

@@ -77,3 +77,22 @@ export const sample_tags = [
     { name: 'информация', count: 1 },
     { name: 'визитка', count: 1 },
 ];
+
+export const sample_users = [
+    {
+        id: 1,
+        name: 'Нина Николова',
+        email: 'ninagbs@abv.bg',
+        password: '12345',
+        address: 'Лозен',
+        isAdmin: true,
+    },
+    {
+        id: 2,
+        name: 'Васил Василев',
+        email: 'vavasilev@abv.bg',
+        password: '12345',
+        address: 'София',
+        isAdmin: false,
+    },
+];
