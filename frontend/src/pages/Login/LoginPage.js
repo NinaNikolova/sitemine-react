@@ -61,12 +61,14 @@ export default function LoginPage() {
 
                     <Button type="submit" text="Login" />
 
+
                     <div className={classes.register}>
-                        New user? &nbsp;
+                        Не сте регистриран? &nbsp;
                         <Link to={`/register${returnUrl ? '?returnUrl=' + returnUrl : ''}`}>
-                            Register here
+                            Регистрирай се тук
                         </Link>
                     </div>
+
                 </form>
             </div>
         </div>

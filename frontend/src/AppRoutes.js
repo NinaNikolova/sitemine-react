@@ -4,6 +4,7 @@ import HomePage from './pages/Home/HomePage';
 import SitePage from './pages/Site/SitePage';
 import CartPage from './pages/Cart/CartPage';
 import LoginPage from './pages/Login/LoginPage';
+import RegisterPage from './pages/Register/RegisterPage';
 
 export default function AppRoutes() {
     return (
@@ -14,6 +15,7 @@ export default function AppRoutes() {
             <Route path="/site/:id" element={<SitePage />} />
             <Route path="/cart" element={<CartPage />} />
             <Route path="/login" element={<LoginPage />} />
+            <Route path="/register" element={<RegisterPage />} />
         </Routes>
     );
 }
