@@ -13,12 +13,16 @@ export default function RegisterPage() {
     const { user } = auth;
     const navigate = useNavigate();
     const [params] = useSearchParams();
-    console.log(params);
+
     const returnUrl = params.get('returnUrl');
 
     useEffect(() => {
-        if (!user) return;
-        returnUrl ? navigate(returnUrl) : navigate('/');
+        if (!user) {
+            return;
+        } else {
+            returnUrl ? navigate(returnUrl) : navigate('/');
+        }
+
     }, [user]);
 
     const {
